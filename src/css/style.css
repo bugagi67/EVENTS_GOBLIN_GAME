@@ -1,0 +1,116 @@
+
+body {
+  color: #999;
+  position: relative; /* Измените на relative */
+  margin: 0; /* Убедитесь, что нет отступов */
+  padding: 0; /* Убедитесь, что нет внутренних отступов */
+  height: 100vh; /* Установите высоту на 100% высоты окна */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+}
+
+#game_container {
+  border-collapse: collapse;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #999;
+  border-radius: 5px;
+}
+
+.cell_move {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid #999;
+  background-color: aquamarine;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hits, .miss {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999999;
+  border-radius: 20%;
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+
+
+/* Контейнер для содержания модального окна */
+.modal_content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Кнопка закрытия (X) */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стили для заголовка и сообщения */
+.modalTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modalMessage {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Кнопка "Играть снова" */
+.playAgainButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playAgainButton:hover {
+  background-color: #45a049;
+}
+
